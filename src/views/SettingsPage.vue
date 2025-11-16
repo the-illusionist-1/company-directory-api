@@ -26,7 +26,7 @@ const addEmployee = async () => {
 </script>
 
 <template>
-  <form class="mx-auto mt-10 flex max-w-md flex-col gap-4 rounded-md bg-white p-8 shadow-lg" @sumbit.prevent="addEmployee">
+  <form class="mx-auto mt-10 flex max-w-md flex-col gap-4 rounded-md bg-white p-8 shadow-lg" @submit.prevent="addEmployee">
     <input type="text" placeholder="userName" v-model="empUserName" class="rounded-md px-4 py-2 text-xl ring-1 ring-slate-300"/>
     <input type="text" placeholder="firstName" v-model="empFirstName" class="rounded-md px-4 py-2 text-xl ring-1 ring-slate-300"/>
     <input type="text" placeholder="lastName" v-model="empLastName" class="rounded-md px-4 py-2 text-xl ring-1 ring-slate-300"/>
